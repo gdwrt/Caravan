@@ -1,0 +1,49 @@
+body {
+    padding-top: 75px;
+}
+
+.box-shadow {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+                0 4px 8px 0 rgba(0,0,0,.05);
+}
+
+#bg-quote {
+    background: url('../img/bg-quote.jpg') center center;
+    background-size:cover;
+}
+/* MUDANDO A FONT-SIZE DO BLOCKQUOTE*/
+/* MENOR QUE 767PX O FONT SIZE DEVE SER REDUZIDO */
+@media(max-width: 767px) {
+    /* tudo abaixo de 767px */
+    /* o font-size do display-4 deverá ser de 2.5rem */
+    #bg-quote .display-4 {
+        font-size: 2.5rem;
+    }
+    body{
+        padding-top:0px;
+    }
+    .fixed-top {
+        position: relative;
+    }
+}
+
+.bg-gradient {
+    background: rgba(0,128,255,1);
+    background: -moz-linear-gradient(left, rgba(0,128,255,1) 0%, rgba(126,44,129,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,128,255,1)), color-stop(100%, rgba(126,44,129,1)));
+    background: -webkit-linear-gradient(left, rgba(0,128,255,1) 0%, rgba(126,44,129,1) 100%);
+    background: -o-linear-gradient(left, rgba(0,128,255,1) 0%, rgba(126,44,129,1) 100%);
+    background: -ms-linear-gradient(left, rgba(0,128,255,1) 0%, rgba(126,44,129,1) 100%);
+    background: linear-gradient(to right, rgba(0,128,255,1) 0%, rgba(126,44,129,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0080ff', endColorstr='#7e2c81', GradientType=1 );
+}
+/* É um macete do css*/
+/* que seleciona o li anterior do li selecionado */
+.lista-plano li + li{
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+.lista-plano li {
+    padding: 1rem;
+    
+}
